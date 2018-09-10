@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            	<div class="prog">
+                	 <p id="status">Step 1 of 2</p>
+                	<progress value="50" max="100" id="progressbar" class="bar">
+                		
+                	</progress><br></div>
+
+                <div class="modal-header">
+                	                	
+                    <h5 class="modal-title" id="exampleModalLabel">Please Enter your Information in the boxes below</h5>
+                    
+                </div>
+                    
+                	
+                
+
+                
+                <form accept-charset="UTF-8" action="https://ef539.infusionsoft.com/app/form/process/3ab7e44006e346a46354cf7bc5c0f2ac" class="infusion-form" id="inf_form_3ab7e44006e346a46354cf7bc5c0f2ac" method="POST" onsubmit="return false">
+                    <div id="phase1" class="phases">
+                        <div class="phases">
+                            <input name="inf_form_xid" type="hidden" value="3ab7e44006e346a46354cf7bc5c0f2ac" />
+                            <input name="inf_form_name" type="hidden" value="SS - Interns Testing Form" />
+                            <input name="infusionsoft_version" type="hidden" value="1.70.0.62751" />
+                            <div class="infusion-field">
+                                <label for="inf_field_FirstName">First Name *</label>
+                                <br>
+                                <input class="infusion-field-input form-control" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name *" type="text" /><br>
+                            </div>
+                            <div id="alert" class="alertbox">
+                                Enter a value for First name
+                            </div><br>
+                            <div class="infusion-field">
+                                <label for="inf_field_LastName">Last Name *</label>
+                                <br>
+                                <input class="infusion-field-input form-control" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name *" type="text" />
+                            </div><br>
+                            <div id="alert2" class="alertbox">
+                                Enter a value for Last name
+                            </div><br>
+                        </div>
+                        <div class="clickme">
+                            <button class="btn" onclick="processPhase1()" type="button">Continue</button>
+                        </div>
+                    </div>
+                    <div id="phase2" class="phases">
+                        <div class="phases">
+                            <div class="infusion-field">
+                                <label for="inf_field_Phone1">Phone Number *</label>
+                                <br>
+                                <input class="infusion-field-input form-control" type="number" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Phone Number *" /><br>
+                            </div><br>
+                            <div id="alert3" class="alertbox">
+                                Enter a number
+                            </div><br>
+                            
+                            <div class="infusion-field">
+                                <label for="inf_field_Email">Email *</label>
+                                <br>
+                                <input class="infusion-field-input form-control" type="email" class="form-control" id="inf_field_Email" name="inf_field_Email" placeholder="Email *" />
+                            </div><br>
+                            <div id="alert1" class="alertbox">
+                                Enter a valid email address
+                            </div><br>
+                        </div>
+                        <div class="infusion-submit clickme">
+                            <button class="infusion-recaptcha btn" id="recaptcha_3ab7e44006e346a46354cf7bc5c0f2ac" type="submit" onclick="submitfrm()">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-full no-gutters">
+        <div class="row">
+            <div class="col-11 col-sm-10 col-md-6 back">
+                <header>
+                    <h1 class="headline">This is a dummy Headline</h1>
+                </header>
+                <hr>
+                <main>
+                    <ol class="list">
+                        <li> <b>First, I know you'll be EXTREMELY SATISFIED with this call and the plan I put together for you!</b>
+                            <br>
+                            <br>
+                            <p>Because of that, there's a pretty good chance that you'll want to become a clientand have my team and I help you with the plan for faster results.</p>
+                        </li>
+                        <br>
+                        <li><b>I'm pretty strict on the type of person that i can help get amazing results.</b>
+                            <br>
+                            <br>
+                            <p>So I put this little application together...
+                                <br>If you take a few minutes to tell me about your business, I can let you know if I can help you BEFORE you even get on a call with me.
+                                <br>
+                                <br>I'm happy to put these scaling planes together (at no charge) for movers and shakers who have things going for them already.
+                                <br>
+                                <br>
+                                <strong>If that's you click the button below and apply today.</strong></p>
+                        </li>
+                    </ol>
+                    <div class="clickme">
+                        <button type="button" class="btn btnn" data-toggle="modal" data-target="#exampleModal">Yes, I want to accelerate my results</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript " src="index.js"></script>
+    <script type="text/javascript" src="https://ef539.infusionsoft.com/app/webTracking/getTrackingCode"></script>
+    <script type="text/javascript" src="https://ef539.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.62751"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
+    <script type="text/javascript" src="https://ef539.infusionsoft.com/app/timezone/timezoneInputJs?xid=3ab7e44006e346a46354cf7bc5c0f2ac"></script>
+</body>
+
+</html>

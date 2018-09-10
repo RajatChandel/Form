@@ -1,0 +1,77 @@
+
+body{
+	background-color: #C0C0C0 !important;
+}
+
+.row{
+	background-color: #C0C0C0;
+	justify-content: center;
+}
+
+.back{
+	background-color: white;
+}
+header{
+	text-align: center;
+	margin: 20px;
+}
+main{
+	margin:40px;
+}
+.headline{
+	font-family:  'Libre Baskerville', serif;
+}
+.clickme{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.btn{
+	padding: 15px 40px 15px 40px !important;
+	color: white;
+	background-color: #00994C ;
+}
+.btnn{
+	padding: 15px 40px 15px 40px ;
+	color: white;
+	background-color: #00994C ;
+}
+
+button.btnn:hover{
+	background-color: #FF8000;
+}
+
+#alert{
+	display: none;
+}
+#phase2{
+	display: none;
+}
+#alert1{
+	display: none;
+}
+.phases{
+	margin: 30px;
+}
+input{
+	width: 100%;
+}
+.alertbox{
+	border:2px solid #FF9999;
+	border-radius: 5px;
+	display: none;
+	color: black;
+	padding: 10px;
+	background-color: #FFCCCC;
+	text-align: center;
+}
+.bar{
+    width: 95%;
+	height: 25px;
+	background-color: #00CC00;
+	
+}
+.prog{
+	margin: 20px;
+}
+
