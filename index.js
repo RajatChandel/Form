@@ -9,8 +9,8 @@ function processPhase1() {
     lastname = _("inf_field_LastName").value;
     $(".alertbox").css("display", "none");
 
-    if (name.length > 2) {
-        if (lastname.length > 2) {
+    if (name.length > 0) {
+        if (lastname.length > 0) {
 
 
             $("#phase1").css("display", "none");
