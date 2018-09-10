@@ -13,22 +13,15 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-            	<div class="prog">
-                	 <p id="status">Step 1 of 2</p>
-                	<progress value="50" max="100" id="progressbar" class="bar">
-                		
-                	</progress><br></div>
-
-                <div class="modal-header">
-                	                	
-                    <h5 class="modal-title" id="exampleModalLabel">Please Enter your Information in the boxes below</h5>
-                    
+                <div class="prog">
+                    <p id="status">Step 1 of 2</p>
+                    <progress value="50" max="100" id="progressbar" class="bar">
+                    </progress>
+                    <br>
                 </div>
-                    
-                	
-                
-
-                
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please Enter your Information in the boxes below</h5>
+                </div>
                 <form accept-charset="UTF-8" action="https://ef539.infusionsoft.com/app/form/process/3ab7e44006e346a46354cf7bc5c0f2ac" class="infusion-form" id="inf_form_3ab7e44006e346a46354cf7bc5c0f2ac" method="POST" onsubmit="return false">
                     <div id="phase1" class="phases">
                         <div class="phases">
@@ -38,19 +31,23 @@
                             <div class="infusion-field">
                                 <label for="inf_field_FirstName">First Name *</label>
                                 <br>
-                                <input class="infusion-field-input form-control" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name *" type="text" /><br>
+                                <input class="infusion-field-input form-control" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name *" type="text" />
+                                <br>
                             </div>
                             <div id="alert" class="alertbox">
                                 Enter a value for First name
-                            </div><br>
+                            </div>
+                            <br>
                             <div class="infusion-field">
                                 <label for="inf_field_LastName">Last Name *</label>
                                 <br>
                                 <input class="infusion-field-input form-control" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name *" type="text" />
-                            </div><br>
+                            </div>
+                            <br>
                             <div id="alert2" class="alertbox">
                                 Enter a value for Last name
-                            </div><br>
+                            </div>
+                            <br>
                         </div>
                         <div class="clickme">
                             <button class="btn" onclick="processPhase1()" type="button">Continue</button>
@@ -61,28 +58,31 @@
                             <div class="infusion-field">
                                 <label for="inf_field_Phone1">Phone Number *</label>
                                 <br>
-                                <input class="infusion-field-input form-control" type="number" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Phone Number *" /><br>
-                            </div><br>
+                                <input class="infusion-field-input form-control" type="number" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Phone Number *" />
+                                <br>
+                            </div>
+                            <br>
                             <div id="alert3" class="alertbox">
                                 Enter a number
-                            </div><br>
-                            
+                            </div>
+                            <br>
                             <div class="infusion-field">
                                 <label for="inf_field_Email">Email *</label>
                                 <br>
                                 <input class="infusion-field-input form-control" type="email" class="form-control" id="inf_field_Email" name="inf_field_Email" placeholder="Email *" />
-                            </div><br>
+                            </div>
+                            <br>
                             <div id="alert1" class="alertbox">
                                 Enter a valid email address
-                            </div><br>
+                            </div>
+                            <br>
                         </div>
                         <div class="infusion-submit clickme">
                             <button class="infusion-recaptcha btn" id="recaptcha_3ab7e44006e346a46354cf7bc5c0f2ac" type="submit" onclick="submitfrm()">Submit</button>
                         </div>
                     </div>
                 </form>
-                <div class="modal-body">
-                </div>
+                
             </div>
         </div>
     </div>
