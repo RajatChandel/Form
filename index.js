@@ -37,6 +37,7 @@ function submitfrm() {
         if (filter.test(email) == false) {
             $("#alert1").css("display", "block");
         } else {
+        	console.log("reached")
             _("inf_form_3ab7e44006e346a46354cf7bc5c0f2ac").submit();
         }
     } else {
